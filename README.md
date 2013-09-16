@@ -1,40 +1,25 @@
 **This project is a work in progress - please come back later to see it in all its glory!**
 
-Shinobi Charts/Grids/Essentials Project Title (Objective-C/Xamarin/Android)
+ShinobiCharts Movement Tracker (Objective-C)
 =====================
 
-Description of project (include link to blog post if there is one)
+This is a demo app which tracks the user's speed, location, and distance travelled. It demonstrates the use of live datasources and custom crosshairs and tooltips in ShinobiCharts.
 
 ![Screenshot](screenshot.png?raw=true)
 
 Building the project
 ------------------
 
-In order to build this project you'll need a copy of ShinobiCharts/Grids/Essentials. If you don't have it yet, you can download a free trial from the [ShinobiCharts/Grids/Essentials website](link to appropriate section).
+In order to build this project you'll need a copy of ShinobiCharts for iOS. If you don't have it yet, you can download a free trial from the [ShinobiCharts website](http://www.shinobicontrols.com/ios/shinobicharts/).
 
-Once you've downloaded and unzipped ShinobiCharts/Grids/Essentials, open up the project in Xcode, and drag ShinobiCharts/Grids/Essentials.embeddedframework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
-
-**Delete the inappropriate sections (and alter the chart/grid name in the sample code if appropriate):**
+If you've used the installer to install ShinobiCharts, everything should just work. If you haven't, then once you've downloaded and unzipped ShinobiCharts, open up the project in Xcode, and drag ShinobiCharts.embeddedframework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
 
 If you're using the trial version you'll need to add your license key. To do so, open up ViewController.m and add the following line after the chart is initialised:
 
     chart.licenseKey=@"your license key";
 
-If you're using the trial version you'll need to add your license key. To do so, open up ViewController.m and add the following line after the grid is initialised:
+Before firing up the project in the simulator, set up a moving location (Debug -> Location -> City Bicycle Ride works nicely with the default settings). Then start the app and watch your graph appear; tap on a line to see a tooltip showing the location on a map.
 
-    grid.licenseKey=@"your license key";
-
-If you’re using the trial version you’ll need to add your license key. To do so, open up AppDelegate.m, import <ShinobiEssentials/SEssentials.h>, and set the license key inside application:didFinishLaunchingWithOptions: as follows:
-
-    #import <ShinobiEssentials/SEssentials.h>
-
-    @implementation AppDelegate
-
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    {
-        [SEssentials setLicenseKey:@"your license key"];
-        …
-    }
 
 Contributing
 ------------
