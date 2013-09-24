@@ -57,13 +57,6 @@
     
     // Add to the series
     [_locationData addObject:datum];
-    
-    // Update the chart, if we've got one
-    if (_chart != NULL) {
-        [_chart appendNumberOfDataPoints:1 toEndOfSeriesAtIndex:0];
-        [_chart appendNumberOfDataPoints:1 toEndOfSeriesAtIndex:1];
-        [_chart redrawChart];
-    }
 }
 
 // Gets the data from the given index

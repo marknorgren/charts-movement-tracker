@@ -21,7 +21,6 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import <MapKit/MapKit.h>
 #import <ShinobiCharts/ShinobiChart.h>
 
 @interface ViewController : UIViewController<CLLocationManagerDelegate, SChartDelegate>

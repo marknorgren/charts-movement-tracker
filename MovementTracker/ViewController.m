@@ -20,12 +20,12 @@
 //
 
 #import <ShinobiCharts/SChartCanvas.h>
-#import "SChartCanvasOverlay+ReorderSubviews.h"
 #import "ViewController.h"
 #import "MovementTrackerDatum.h"
 #import "MovementTrackerDataSource.h"
 #import "MapCrosshair.h"
 #import "MapTooltip.h"
+#import <ShinobiCharts/SChartCanvasOverlay.h>
 
 @interface ViewController () {
     CLLocationManager *_locationManager;
@@ -35,55 +35,45 @@
     ShinobiChart* _chart;
     MapTooltip* _mapTooltip;
     MapCrosshair* _mapCrosshair;
+    __weak IBOutlet UIView *_placeholderView;
+    BOOL chartSetup;
 }
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    
+    if (self=[super initWithCoder:aDecoder]) {
+
+        // Set up the location manager
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
+        _locationManager.distanceFilter = 5;
+        [_locationManager startUpdatingLocation];
+        
+        // Create a data source
+        _datasource = [[MovementTrackerDataSource alloc] init];
+    }
+    
+    return self;
+}
+
+-(void)viewDidLoad {
+    
     [super viewDidLoad];
-	
-    // Set up the location manager
-    _locationManager = [[CLLocationManager alloc] init];
-    _locationManager.delegate = self;
-    _locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
-    _locationManager.distanceFilter = 5;
-    [_locationManager startUpdatingLocation];
     
-    // Create a data source
-    _datasource = [[MovementTrackerDataSource alloc] init];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-}
-
-- (BOOL)shouldAutorotate
-{
-    return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskLandscape;
-}
-
--(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-    return UIInterfaceOrientationLandscapeLeft;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view.backgroundColor = [UIColor colorWithRed:239/255.f green:239/255.f blue:244/255.f alpha:1.f];
 }
 
 - (void)setupChart {
     // Initialize chart and do basic setup
-    _chart = [[ShinobiChart alloc] initWithFrame:CGRectMake(60, 80, self.view.bounds.size.width - 120, self.view.bounds.size.height - 90)];
+    _chart = [[ShinobiChart alloc] initWithFrame: _placeholderView.bounds];
     _chart.datasource = _datasource;
     _chart.delegate = self;
+    _chart.autoresizingMask = ~UIViewAutoresizingNone;
     _chart.legend.hidden = NO;
     _chart.legend.position = SChartLegendPositionBottomMiddle;
     _chart.title = @"Movement Tracker";
@@ -118,11 +108,10 @@
     _chart.crosshair.style.lineColor = [UIColor blackColor];
     
     // Add the chart to our view
-    [self.view addSubview:_chart];
+
+    [_placeholderView addSubview: _chart];
     
-    // Tell the datasource about the chart now it's set up
-    _datasource.chart = _chart;
-    NSLog(@"%@", [_chart getInfo]);
+    chartSetup = YES;
 }
 
 #pragma mark - CLLocationManagerDelegate implementation methods
@@ -133,10 +122,18 @@
     // Add the location to our datasource
     [_datasource addLocation:location lastLocation:_lastLocation];
     
-    if (_chart == NULL) {
+    if (!chartSetup) {
         // Set up the chart now we've got a data point
         [self setupChart];
     } else {
+        
+        if ([[_chart series] count]) { // Prevents an early location update from crashing the chart if it hasn't yet loaded!
+            [_chart appendNumberOfDataPoints:1 toEndOfSeriesAtIndex:0];
+            [_chart appendNumberOfDataPoints:1 toEndOfSeriesAtIndex:1];
+        }
+        
+        [_chart redrawChart];
+        
         // Pass the new locations, plus the last location, to our custom tooltip, so it can plot the path on its map
         NSMutableArray *allLocations = [NSMutableArray arrayWithArray:locations];
         [allLocations insertObject:_lastLocation atIndex:0];
@@ -149,18 +146,23 @@
 
 #pragma mark - SChartDelegate methods
 
--(void)sChartRenderFinished:(ShinobiChart *)chart
-{
-    // Reorder the subviews on our canvas overlay
-    [chart.canvas.overlay reorderSubviews];
-    // Update the crosshair
+-(void)sChartRenderFinished:(ShinobiChart *)chart {
+    
+    [self reorderSubviews: chart];
+    
     [_mapCrosshair updateCrosshair];
 }
 
--(void)sChart:(ShinobiChart *)chart crosshairMovedToXValue:(id)x andYValue:(id)y
-{
-    // Reorder the subviews on our canvas overlay
-    [chart.canvas.overlay reorderSubviews];
+-(void)sChart:(ShinobiChart *)chart crosshairMovedToXValue:(id)x andYValue:(id)y {
+    
+    [self reorderSubviews: chart];
+}
+
+// Reorder the subviews to ensure that the tooltip is the top view in the chart
+-(void)reorderSubviews:(ShinobiChart *)chart {
+    
+    [chart bringSubviewToFront: chart.canvas];
+    [chart.canvas.overlay bringSubviewToFront: chart.crosshair];
 }
 
 @end

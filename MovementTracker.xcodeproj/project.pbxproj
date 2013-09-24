@@ -7,157 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6845E0F517C21C2000A6CFF8 /* MapTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 6845E0F417C21C2000A6CFF8 /* MapTooltip.m */; };
-		68509B0317E6FA5C00C171DC /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68509B0217E6FA5C00C171DC /* ShinobiCharts.framework */; };
-		6854EFBD17DE1385001ADB60 /* MapCrosshair.m in Sources */ = {isa = PBXBuildFile; fileRef = 6854EFBC17DE1384001ADB60 /* MapCrosshair.m */; };
-		68CC477A1795396D00CC9785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC47791795396D00CC9785 /* UIKit.framework */; };
-		68CC477C1795396D00CC9785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC477B1795396D00CC9785 /* Foundation.framework */; };
-		68CC477E1795396D00CC9785 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC477D1795396D00CC9785 /* CoreGraphics.framework */; };
-		68CC47841795396D00CC9785 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CC47821795396D00CC9785 /* InfoPlist.strings */; };
-		68CC47861795396D00CC9785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47851795396D00CC9785 /* main.m */; };
-		68CC478A1795396D00CC9785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47891795396D00CC9785 /* AppDelegate.m */; };
-		68CC478C1795396D00CC9785 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CC478B1795396D00CC9785 /* Default.png */; };
-		68CC478E1795396D00CC9785 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CC478D1795396D00CC9785 /* Default@2x.png */; };
-		68CC47901795396D00CC9785 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CC478F1795396D00CC9785 /* Default-568h@2x.png */; };
-		68CC47931795396D00CC9785 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47921795396D00CC9785 /* ViewController.m */; };
-		68CC479D17953AB900CC9785 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC479C17953AB900CC9785 /* CoreLocation.framework */; };
-		68CC479F1795429900CC9785 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC479E1795429900CC9785 /* MapKit.framework */; };
-		68CC47A21795584100CC9785 /* TrackOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47A11795584100CC9785 /* TrackOverlay.m */; };
-		68CC47A617956ED500CC9785 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC47A517956ED500CC9785 /* QuartzCore.framework */; };
-		68CC47AA17956F2A00CC9785 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC47A917956F2A00CC9785 /* OpenGLES.framework */; };
-		68CC47AC17956FDC00CC9785 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC47AB17956FDC00CC9785 /* CoreText.framework */; };
-		68CC47B017A67D3300CC9785 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CC47AF17A67D3300CC9785 /* libstdc++.dylib */; };
-		68CC47BF17A7B70000CC9785 /* MovementTrackerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47BE17A7B70000CC9785 /* MovementTrackerDataSource.m */; };
-		68CC47C217A7BD5D00CC9785 /* MovementTrackerDatum.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CC47C117A7BD5C00CC9785 /* MovementTrackerDatum.m */; };
-		68E3973C17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E3973B17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.m */; };
+		8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */; };
+		8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */; };
+		8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632317F1DAC200C4D1EF /* OpenGLES.framework */; };
+		8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632517F1DAC700C4D1EF /* CoreText.framework */; };
+		8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632717F1DACF00C4D1EF /* libstdc++.dylib */; };
+		8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */; };
+		8CBDB27417F1D92400029CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27317F1D92400029CAA /* Foundation.framework */; };
+		8CBDB27617F1D92400029CAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27517F1D92400029CAA /* CoreGraphics.framework */; };
+		8CBDB27817F1D92400029CAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27717F1D92400029CAA /* UIKit.framework */; };
+		8CBDB27E17F1D92400029CAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB27C17F1D92400029CAA /* InfoPlist.strings */; };
+		8CBDB28017F1D92400029CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB27F17F1D92400029CAA /* main.m */; };
+		8CBDB28417F1D92400029CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB28317F1D92400029CAA /* AppDelegate.m */; };
+		8CBDB28717F1D92400029CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB28517F1D92400029CAA /* Main.storyboard */; };
+		8CBDB28A17F1D92400029CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB28917F1D92400029CAA /* ViewController.m */; };
+		8CBDB28C17F1D92400029CAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB28B17F1D92400029CAA /* Images.xcassets */; };
+		8CBDB2B017F1D94D00029CAA /* MovementTrackerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */; };
+		8CBDB2B117F1D94D00029CAA /* MovementTrackerDatum.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */; };
+		8CBDB2B217F1D94D00029CAA /* MapTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */; };
+		8CBDB2B317F1D94D00029CAA /* MapCrosshair.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */; };
+		8CBDB2B517F1D9A400029CAA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB2B417F1D9A400029CAA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6845E0F317C21C2000A6CFF8 /* MapTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MapTooltip.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6845E0F417C21C2000A6CFF8 /* MapTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTooltip.m; sourceTree = "<group>"; };
-		68509B0217E6FA5C00C171DC /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
-		6854EFBB17DE1384001ADB60 /* MapCrosshair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MapCrosshair.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6854EFBC17DE1384001ADB60 /* MapCrosshair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MapCrosshair.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC47761795396D00CC9785 /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68CC47791795396D00CC9785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		68CC477B1795396D00CC9785 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		68CC477D1795396D00CC9785 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		68CC47811795396D00CC9785 /* MovementTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovementTracker-Info.plist"; sourceTree = "<group>"; };
-		68CC47831795396D00CC9785 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68CC47851795396D00CC9785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC47871795396D00CC9785 /* MovementTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovementTracker-Prefix.pch"; sourceTree = "<group>"; };
-		68CC47881795396D00CC9785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68CC47891795396D00CC9785 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC478B1795396D00CC9785 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		68CC478D1795396D00CC9785 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		68CC478F1795396D00CC9785 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		68CC47911795396D00CC9785 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68CC47921795396D00CC9785 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC479C17953AB900CC9785 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		68CC479E1795429900CC9785 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		68CC47A01795584100CC9785 /* TrackOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TrackOverlay.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68CC47A11795584100CC9785 /* TrackOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TrackOverlay.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC47A517956ED500CC9785 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		68CC47A917956F2A00CC9785 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		68CC47AB17956FDC00CC9785 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		68CC47AF17A67D3300CC9785 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		68CC47BD17A7B70000CC9785 /* MovementTrackerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MovementTrackerDataSource.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68CC47BE17A7B70000CC9785 /* MovementTrackerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MovementTrackerDataSource.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68CC47C017A7BD5C00CC9785 /* MovementTrackerDatum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MovementTrackerDatum.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68CC47C117A7BD5C00CC9785 /* MovementTrackerDatum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MovementTrackerDatum.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		68E3973A17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "SChartCanvasOverlay+ReorderSubviews.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		68E3973B17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "SChartCanvasOverlay+ReorderSubviews.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8C96632317F1DAC200C4D1EF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8C96632517F1DAC700C4D1EF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		8C96632717F1DACF00C4D1EF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
+		8CBDB27017F1D92400029CAA /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBDB27317F1D92400029CAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CBDB27517F1D92400029CAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CBDB27717F1D92400029CAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CBDB27B17F1D92400029CAA /* MovementTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovementTracker-Info.plist"; sourceTree = "<group>"; };
+		8CBDB27D17F1D92400029CAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CBDB27F17F1D92400029CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CBDB28117F1D92400029CAA /* MovementTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovementTracker-Prefix.pch"; sourceTree = "<group>"; };
+		8CBDB28217F1D92400029CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CBDB28317F1D92400029CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CBDB28617F1D92400029CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CBDB28817F1D92400029CAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CBDB28917F1D92400029CAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CBDB28B17F1D92400029CAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CBDB2A817F1D94D00029CAA /* MovementTrackerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementTrackerDataSource.h; sourceTree = "<group>"; };
+		8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementTrackerDataSource.m; sourceTree = "<group>"; };
+		8CBDB2AA17F1D94D00029CAA /* MovementTrackerDatum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementTrackerDatum.h; sourceTree = "<group>"; };
+		8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementTrackerDatum.m; sourceTree = "<group>"; };
+		8CBDB2AC17F1D94D00029CAA /* MapTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTooltip.h; sourceTree = "<group>"; };
+		8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTooltip.m; sourceTree = "<group>"; };
+		8CBDB2AE17F1D94D00029CAA /* MapCrosshair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCrosshair.h; sourceTree = "<group>"; };
+		8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCrosshair.m; sourceTree = "<group>"; };
+		8CBDB2B417F1D9A400029CAA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		68CC47731795396D00CC9785 /* Frameworks */ = {
+		8CBDB26D17F1D92400029CAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68509B0317E6FA5C00C171DC /* ShinobiCharts.framework in Frameworks */,
-				68CC47B017A67D3300CC9785 /* libstdc++.dylib in Frameworks */,
-				68CC47AC17956FDC00CC9785 /* CoreText.framework in Frameworks */,
-				68CC47AA17956F2A00CC9785 /* OpenGLES.framework in Frameworks */,
-				68CC47A617956ED500CC9785 /* QuartzCore.framework in Frameworks */,
-				68CC479F1795429900CC9785 /* MapKit.framework in Frameworks */,
-				68CC479D17953AB900CC9785 /* CoreLocation.framework in Frameworks */,
-				68CC477A1795396D00CC9785 /* UIKit.framework in Frameworks */,
-				68CC477C1795396D00CC9785 /* Foundation.framework in Frameworks */,
-				68CC477E1795396D00CC9785 /* CoreGraphics.framework in Frameworks */,
+				8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */,
+				8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */,
+				8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */,
+				8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */,
+				8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */,
+				8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */,
+				8CBDB2B517F1D9A400029CAA /* MapKit.framework in Frameworks */,
+				8CBDB27617F1D92400029CAA /* CoreGraphics.framework in Frameworks */,
+				8CBDB27817F1D92400029CAA /* UIKit.framework in Frameworks */,
+				8CBDB27417F1D92400029CAA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68CC476D1795396D00CC9785 = {
+		8CBDB26717F1D92400029CAA = {
 			isa = PBXGroup;
 			children = (
-				68CC477F1795396D00CC9785 /* MovementTracker */,
-				68CC47781795396D00CC9785 /* Frameworks */,
-				68CC47771795396D00CC9785 /* Products */,
+				8CBDB27917F1D92400029CAA /* MovementTracker */,
+				8CBDB27217F1D92400029CAA /* Frameworks */,
+				8CBDB27117F1D92400029CAA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		68CC47771795396D00CC9785 /* Products */ = {
+		8CBDB27117F1D92400029CAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68CC47761795396D00CC9785 /* MovementTracker.app */,
+				8CBDB27017F1D92400029CAA /* MovementTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68CC47781795396D00CC9785 /* Frameworks */ = {
+		8CBDB27217F1D92400029CAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68509B0217E6FA5C00C171DC /* ShinobiCharts.framework */,
-				68CC47AB17956FDC00CC9785 /* CoreText.framework */,
-				68CC47A917956F2A00CC9785 /* OpenGLES.framework */,
-				68CC47AF17A67D3300CC9785 /* libstdc++.dylib */,
-				68CC47A517956ED500CC9785 /* QuartzCore.framework */,
-				68CC479C17953AB900CC9785 /* CoreLocation.framework */,
-				68CC479E1795429900CC9785 /* MapKit.framework */,
-				68CC47791795396D00CC9785 /* UIKit.framework */,
-				68CC477B1795396D00CC9785 /* Foundation.framework */,
-				68CC477D1795396D00CC9785 /* CoreGraphics.framework */,
+				8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */,
+				8C96632717F1DACF00C4D1EF /* libstdc++.dylib */,
+				8C96632517F1DAC700C4D1EF /* CoreText.framework */,
+				8C96632317F1DAC200C4D1EF /* OpenGLES.framework */,
+				8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */,
+				8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */,
+				8CBDB2B417F1D9A400029CAA /* MapKit.framework */,
+				8CBDB27317F1D92400029CAA /* Foundation.framework */,
+				8CBDB27517F1D92400029CAA /* CoreGraphics.framework */,
+				8CBDB27717F1D92400029CAA /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		68CC477F1795396D00CC9785 /* MovementTracker */ = {
+		8CBDB27917F1D92400029CAA /* MovementTracker */ = {
 			isa = PBXGroup;
 			children = (
-				68CC47881795396D00CC9785 /* AppDelegate.h */,
-				68CC47891795396D00CC9785 /* AppDelegate.m */,
-				68CC47911795396D00CC9785 /* ViewController.h */,
-				68CC47921795396D00CC9785 /* ViewController.m */,
-				68CC47801795396D00CC9785 /* Supporting Files */,
-				68CC47A01795584100CC9785 /* TrackOverlay.h */,
-				68CC47A11795584100CC9785 /* TrackOverlay.m */,
-				68CC47BD17A7B70000CC9785 /* MovementTrackerDataSource.h */,
-				68CC47BE17A7B70000CC9785 /* MovementTrackerDataSource.m */,
-				68CC47C017A7BD5C00CC9785 /* MovementTrackerDatum.h */,
-				68CC47C117A7BD5C00CC9785 /* MovementTrackerDatum.m */,
-				6845E0F317C21C2000A6CFF8 /* MapTooltip.h */,
-				6845E0F417C21C2000A6CFF8 /* MapTooltip.m */,
-				6854EFBB17DE1384001ADB60 /* MapCrosshair.h */,
-				6854EFBC17DE1384001ADB60 /* MapCrosshair.m */,
-				68E3973A17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.h */,
-				68E3973B17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.m */,
+				8CBDB28217F1D92400029CAA /* AppDelegate.h */,
+				8CBDB28317F1D92400029CAA /* AppDelegate.m */,
+				8CBDB28517F1D92400029CAA /* Main.storyboard */,
+				8CBDB28817F1D92400029CAA /* ViewController.h */,
+				8CBDB28917F1D92400029CAA /* ViewController.m */,
+				8CBDB2A817F1D94D00029CAA /* MovementTrackerDataSource.h */,
+				8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */,
+				8CBDB2AA17F1D94D00029CAA /* MovementTrackerDatum.h */,
+				8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */,
+				8CBDB2AC17F1D94D00029CAA /* MapTooltip.h */,
+				8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */,
+				8CBDB2AE17F1D94D00029CAA /* MapCrosshair.h */,
+				8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */,
+				8CBDB28B17F1D92400029CAA /* Images.xcassets */,
+				8CBDB27A17F1D92400029CAA /* Supporting Files */,
 			);
 			path = MovementTracker;
 			sourceTree = "<group>";
 		};
-		68CC47801795396D00CC9785 /* Supporting Files */ = {
+		8CBDB27A17F1D92400029CAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				68CC47811795396D00CC9785 /* MovementTracker-Info.plist */,
-				68CC47821795396D00CC9785 /* InfoPlist.strings */,
-				68CC47851795396D00CC9785 /* main.m */,
-				68CC47871795396D00CC9785 /* MovementTracker-Prefix.pch */,
-				68CC478B1795396D00CC9785 /* Default.png */,
-				68CC478D1795396D00CC9785 /* Default@2x.png */,
-				68CC478F1795396D00CC9785 /* Default-568h@2x.png */,
+				8CBDB27B17F1D92400029CAA /* MovementTracker-Info.plist */,
+				8CBDB27C17F1D92400029CAA /* InfoPlist.strings */,
+				8CBDB27F17F1D92400029CAA /* main.m */,
+				8CBDB28117F1D92400029CAA /* MovementTracker-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,13 +152,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68CC47751795396D00CC9785 /* MovementTracker */ = {
+		8CBDB26F17F1D92400029CAA /* MovementTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68CC47991795396D00CC9785 /* Build configuration list for PBXNativeTarget "MovementTracker" */;
+			buildConfigurationList = 8CBDB2A217F1D92400029CAA /* Build configuration list for PBXNativeTarget "MovementTracker" */;
 			buildPhases = (
-				68CC47721795396D00CC9785 /* Sources */,
-				68CC47731795396D00CC9785 /* Frameworks */,
-				68CC47741795396D00CC9785 /* Resources */,
+				8CBDB26C17F1D92400029CAA /* Sources */,
+				8CBDB26D17F1D92400029CAA /* Frameworks */,
+				8CBDB26E17F1D92400029CAA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -179,91 +166,101 @@
 			);
 			name = MovementTracker;
 			productName = MovementTracker;
-			productReference = 68CC47761795396D00CC9785 /* MovementTracker.app */;
+			productReference = 8CBDB27017F1D92400029CAA /* MovementTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		68CC476E1795396D00CC9785 /* Project object */ = {
+		8CBDB26817F1D92400029CAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alison Clarke";
 			};
-			buildConfigurationList = 68CC47711795396D00CC9785 /* Build configuration list for PBXProject "MovementTracker" */;
+			buildConfigurationList = 8CBDB26B17F1D92400029CAA /* Build configuration list for PBXProject "MovementTracker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 68CC476D1795396D00CC9785;
-			productRefGroup = 68CC47771795396D00CC9785 /* Products */;
+			mainGroup = 8CBDB26717F1D92400029CAA;
+			productRefGroup = 8CBDB27117F1D92400029CAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68CC47751795396D00CC9785 /* MovementTracker */,
+				8CBDB26F17F1D92400029CAA /* MovementTracker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		68CC47741795396D00CC9785 /* Resources */ = {
+		8CBDB26E17F1D92400029CAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CC47841795396D00CC9785 /* InfoPlist.strings in Resources */,
-				68CC478C1795396D00CC9785 /* Default.png in Resources */,
-				68CC478E1795396D00CC9785 /* Default@2x.png in Resources */,
-				68CC47901795396D00CC9785 /* Default-568h@2x.png in Resources */,
+				8CBDB28C17F1D92400029CAA /* Images.xcassets in Resources */,
+				8CBDB27E17F1D92400029CAA /* InfoPlist.strings in Resources */,
+				8CBDB28717F1D92400029CAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		68CC47721795396D00CC9785 /* Sources */ = {
+		8CBDB26C17F1D92400029CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68CC47861795396D00CC9785 /* main.m in Sources */,
-				68CC478A1795396D00CC9785 /* AppDelegate.m in Sources */,
-				68CC47931795396D00CC9785 /* ViewController.m in Sources */,
-				68CC47A21795584100CC9785 /* TrackOverlay.m in Sources */,
-				68CC47BF17A7B70000CC9785 /* MovementTrackerDataSource.m in Sources */,
-				68CC47C217A7BD5D00CC9785 /* MovementTrackerDatum.m in Sources */,
-				6845E0F517C21C2000A6CFF8 /* MapTooltip.m in Sources */,
-				6854EFBD17DE1385001ADB60 /* MapCrosshair.m in Sources */,
-				68E3973C17E6FD100092A43D /* SChartCanvasOverlay+ReorderSubviews.m in Sources */,
+				8CBDB2B317F1D94D00029CAA /* MapCrosshair.m in Sources */,
+				8CBDB2B017F1D94D00029CAA /* MovementTrackerDataSource.m in Sources */,
+				8CBDB28A17F1D92400029CAA /* ViewController.m in Sources */,
+				8CBDB2B217F1D94D00029CAA /* MapTooltip.m in Sources */,
+				8CBDB28417F1D92400029CAA /* AppDelegate.m in Sources */,
+				8CBDB2B117F1D94D00029CAA /* MovementTrackerDatum.m in Sources */,
+				8CBDB28017F1D92400029CAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		68CC47821795396D00CC9785 /* InfoPlist.strings */ = {
+		8CBDB27C17F1D92400029CAA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68CC47831795396D00CC9785 /* en */,
+				8CBDB27D17F1D92400029CAA /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CBDB28517F1D92400029CAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBDB28617F1D92400029CAA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		68CC47971795396D00CC9785 /* Debug */ = {
+		8CBDB2A017F1D92400029CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -275,49 +272,60 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		68CC47981795396D00CC9785 /* Release */ = {
+		8CBDB2A117F1D92400029CAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		68CC479A1795396D00CC9785 /* Debug */ = {
+		8CBDB2A317F1D92400029CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-					"\"$(SRCROOT)\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
@@ -327,13 +335,14 @@
 			};
 			name = Debug;
 		};
-		68CC479B1795396D00CC9785 /* Release */ = {
+		8CBDB2A417F1D92400029CAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-					"\"$(SRCROOT)\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
@@ -346,25 +355,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68CC47711795396D00CC9785 /* Build configuration list for PBXProject "MovementTracker" */ = {
+		8CBDB26B17F1D92400029CAA /* Build configuration list for PBXProject "MovementTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68CC47971795396D00CC9785 /* Debug */,
-				68CC47981795396D00CC9785 /* Release */,
+				8CBDB2A017F1D92400029CAA /* Debug */,
+				8CBDB2A117F1D92400029CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68CC47991795396D00CC9785 /* Build configuration list for PBXNativeTarget "MovementTracker" */ = {
+		8CBDB2A217F1D92400029CAA /* Build configuration list for PBXNativeTarget "MovementTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68CC479A1795396D00CC9785 /* Debug */,
-				68CC479B1795396D00CC9785 /* Release */,
+				8CBDB2A317F1D92400029CAA /* Debug */,
+				8CBDB2A417F1D92400029CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 68CC476E1795396D00CC9785 /* Project object */;
+	rootObject = 8CBDB26817F1D92400029CAA /* Project object */;
 }
