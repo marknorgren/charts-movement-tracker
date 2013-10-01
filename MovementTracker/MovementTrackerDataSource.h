@@ -26,8 +26,6 @@
 
 @interface MovementTrackerDataSource : NSObject<SChartDatasource>
 
-@property (nonatomic, strong) ShinobiChart *chart;
-
 - (void)addLocation:(CLLocation*)location lastLocation:(CLLocation*) lastLocation;
 - (MovementTrackerDatum*) getMovementTrackerDatumAtIndex:(int) index;
 
