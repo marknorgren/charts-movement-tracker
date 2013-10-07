@@ -77,6 +77,7 @@
     _chart.legend.hidden = NO;
     _chart.legend.position = SChartLegendPositionBottomMiddle;
     _chart.title = @"Movement Tracker";
+    _chart.backgroundColor = [UIColor clearColor];
     
     // Turn off clipsToBounds so that out tooltip can go outside of the chart area
     [_chart setClipsToBounds:NO];
