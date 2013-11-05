@@ -52,7 +52,7 @@
         _totalDistance += [location distanceFromLocation:lastLocation] * 0.000621371192;
     }
     datum.totalDistance = _totalDistance;
-    // Convert speed (in m/s into mph)
+    // Convert speed (in m/s) into mph
     datum.speed = location.speed * 2.23693629;
     
     // Add to the series
@@ -70,18 +70,9 @@
 
 #pragma mark - SChartDatasource implementation methods
 
-- (SChartAxis *)sChart:(ShinobiChart *)chart yAxisForSeriesAtIndex:(int)index {
-    NSArray* axes = chart.allYAxes;
-    return axes[index];
-}
-
 - (int)numberOfSeriesInSChart:(ShinobiChart*)chart
 {
     return 2;
-}
-
--(int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
-    return _locationData.count;
 }
 
 -(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(int)index {
@@ -96,6 +87,10 @@
     return lineSeries;
 }
 
+-(int)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(int)seriesIndex {
+    return _locationData.count;
+}
+
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(int)dataIndex forSeriesAtIndex:(int)seriesIndex {
     
     MovementTrackerDatum *datum = [_locationData objectAtIndex:dataIndex];
@@ -103,7 +98,7 @@
     // Create a new datapoint
     SChartDataPoint* pt = [SChartDataPoint new];
     pt.xValue = datum.date;
-
+    
     if (seriesIndex==0) {
         // First series is speed
         pt.yValue = @(datum.speed);
@@ -113,6 +108,11 @@
     }
     
     return pt;
+}
+
+- (SChartAxis *)sChart:(ShinobiChart *)chart yAxisForSeriesAtIndex:(int)index {
+    NSArray* axes = chart.allYAxes;
+    return axes[index];
 }
 
 @end

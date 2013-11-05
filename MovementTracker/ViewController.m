@@ -78,7 +78,7 @@
     _chart.legend.position = SChartLegendPositionBottomMiddle;
     _chart.title = @"Movement Tracker";
     
-    // Turn off clipsToBounds so that out tooltip can go outside of the chart area
+    // Turn off clipsToBounds so that our tooltip can go outside of the chart area
     [_chart setClipsToBounds:NO];
     
     // Add x-axis

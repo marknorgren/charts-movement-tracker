@@ -95,6 +95,17 @@
     }
 }
 
+#pragma mark - MKMapViewDelegate methods
+
+- (MKOverlayView*)mapView:(MKMapView*)theMapView viewForOverlay:(id <MKOverlay>)overlay
+{
+    MKPolylineView* lineView = [[MKPolylineView alloc] initWithPolyline:_polyline];
+    lineView.fillColor = [UIColor redColor];
+    lineView.strokeColor = [UIColor redColor];
+    lineView.lineWidth = 3;
+    return lineView;
+}
+
 #pragma mark - SChartTooltip overrides
 
 - (void)setPosition:(SChartPoint)pos onCanvas:(SChartCanvas*)canvas {
@@ -137,17 +148,6 @@
         _region.center = location.coordinate;
         [_mapView setRegion:_region animated:NO];
     }
-}
-
-#pragma mark - MKMapViewDelegate methods
-
-- (MKOverlayView*)mapView:(MKMapView*)theMapView viewForOverlay:(id <MKOverlay>)overlay
-{
-    MKPolylineView* lineView = [[MKPolylineView alloc] initWithPolyline:_polyline];
-    lineView.fillColor = [UIColor redColor];
-    lineView.strokeColor = [UIColor redColor];
-    lineView.lineWidth = 3;
-    return lineView;
 }
 
 @end
