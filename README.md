@@ -1,5 +1,3 @@
-**This project is a work in progress - please come back later to see it in all its glory!**
-
 ShinobiCharts Movement Tracker (Objective-C)
 =====================
 
