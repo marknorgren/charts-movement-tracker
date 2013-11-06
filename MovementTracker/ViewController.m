@@ -73,7 +73,7 @@
     _chart = [[ShinobiChart alloc] initWithFrame: _placeholderView.bounds];
     _chart.datasource = _datasource;
     _chart.delegate = self;
-    _chart.autoresizingMask = ~UIViewAutoresizingNone;
+    _chart.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _chart.legend.hidden = NO;
     _chart.legend.position = SChartLegendPositionBottomMiddle;
     _chart.title = @"Movement Tracker";
