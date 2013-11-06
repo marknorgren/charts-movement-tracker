@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */; };
+		8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */; };
+		8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632317F1DAC200C4D1EF /* OpenGLES.framework */; };
+		8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632517F1DAC700C4D1EF /* CoreText.framework */; };
+		8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632717F1DACF00C4D1EF /* libstdc++.dylib */; };
+		8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */; };
+		8CBDB27417F1D92400029CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27317F1D92400029CAA /* Foundation.framework */; };
+		8CBDB27617F1D92400029CAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27517F1D92400029CAA /* CoreGraphics.framework */; };
+		8CBDB27817F1D92400029CAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27717F1D92400029CAA /* UIKit.framework */; };
+		8CBDB27E17F1D92400029CAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB27C17F1D92400029CAA /* InfoPlist.strings */; };
+		8CBDB28017F1D92400029CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB27F17F1D92400029CAA /* main.m */; };
+		8CBDB28417F1D92400029CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB28317F1D92400029CAA /* AppDelegate.m */; };
+		8CBDB28717F1D92400029CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB28517F1D92400029CAA /* Main.storyboard */; };
+		8CBDB28A17F1D92400029CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB28917F1D92400029CAA /* ViewController.m */; };
+		8CBDB28C17F1D92400029CAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDB28B17F1D92400029CAA /* Images.xcassets */; };
+		8CBDB2B017F1D94D00029CAA /* MovementTrackerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */; };
+		8CBDB2B117F1D94D00029CAA /* MovementTrackerDatum.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */; };
+		8CBDB2B217F1D94D00029CAA /* MapTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */; };
+		8CBDB2B317F1D94D00029CAA /* MapCrosshair.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */; };
+		8CBDB2B517F1D9A400029CAA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB2B417F1D9A400029CAA /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8C96632317F1DAC200C4D1EF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8C96632517F1DAC700C4D1EF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		8C96632717F1DACF00C4D1EF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
+		8CBDB27017F1D92400029CAA /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBDB27317F1D92400029CAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CBDB27517F1D92400029CAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CBDB27717F1D92400029CAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CBDB27B17F1D92400029CAA /* MovementTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovementTracker-Info.plist"; sourceTree = "<group>"; };
+		8CBDB27D17F1D92400029CAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CBDB27F17F1D92400029CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CBDB28117F1D92400029CAA /* MovementTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovementTracker-Prefix.pch"; sourceTree = "<group>"; };
+		8CBDB28217F1D92400029CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CBDB28317F1D92400029CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CBDB28617F1D92400029CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CBDB28817F1D92400029CAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CBDB28917F1D92400029CAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CBDB28B17F1D92400029CAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CBDB2A817F1D94D00029CAA /* MovementTrackerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementTrackerDataSource.h; sourceTree = "<group>"; };
+		8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementTrackerDataSource.m; sourceTree = "<group>"; };
+		8CBDB2AA17F1D94D00029CAA /* MovementTrackerDatum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementTrackerDatum.h; sourceTree = "<group>"; };
+		8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovementTrackerDatum.m; sourceTree = "<group>"; };
+		8CBDB2AC17F1D94D00029CAA /* MapTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTooltip.h; sourceTree = "<group>"; };
+		8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTooltip.m; sourceTree = "<group>"; };
+		8CBDB2AE17F1D94D00029CAA /* MapCrosshair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCrosshair.h; sourceTree = "<group>"; };
+		8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCrosshair.m; sourceTree = "<group>"; };
+		8CBDB2B417F1D9A400029CAA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CBDB26D17F1D92400029CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */,
+				8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */,
+				8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */,
+				8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */,
+				8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */,
+				8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */,
+				8CBDB2B517F1D9A400029CAA /* MapKit.framework in Frameworks */,
+				8CBDB27617F1D92400029CAA /* CoreGraphics.framework in Frameworks */,
+				8CBDB27817F1D92400029CAA /* UIKit.framework in Frameworks */,
+				8CBDB27417F1D92400029CAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CBDB26717F1D92400029CAA = {
+			isa = PBXGroup;
+			children = (
+				8CBDB27917F1D92400029CAA /* MovementTracker */,
+				8CBDB27217F1D92400029CAA /* Frameworks */,
+				8CBDB27117F1D92400029CAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CBDB27117F1D92400029CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CBDB27017F1D92400029CAA /* MovementTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CBDB27217F1D92400029CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */,
+				8C96632717F1DACF00C4D1EF /* libstdc++.dylib */,
+				8C96632517F1DAC700C4D1EF /* CoreText.framework */,
+				8C96632317F1DAC200C4D1EF /* OpenGLES.framework */,
+				8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */,
+				8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */,
+				8CBDB2B417F1D9A400029CAA /* MapKit.framework */,
+				8CBDB27317F1D92400029CAA /* Foundation.framework */,
+				8CBDB27517F1D92400029CAA /* CoreGraphics.framework */,
+				8CBDB27717F1D92400029CAA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CBDB27917F1D92400029CAA /* MovementTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8CBDB28217F1D92400029CAA /* AppDelegate.h */,
+				8CBDB28317F1D92400029CAA /* AppDelegate.m */,
+				8CBDB28517F1D92400029CAA /* Main.storyboard */,
+				8CBDB28817F1D92400029CAA /* ViewController.h */,
+				8CBDB28917F1D92400029CAA /* ViewController.m */,
+				8CBDB2A817F1D94D00029CAA /* MovementTrackerDataSource.h */,
+				8CBDB2A917F1D94D00029CAA /* MovementTrackerDataSource.m */,
+				8CBDB2AA17F1D94D00029CAA /* MovementTrackerDatum.h */,
+				8CBDB2AB17F1D94D00029CAA /* MovementTrackerDatum.m */,
+				8CBDB2AC17F1D94D00029CAA /* MapTooltip.h */,
+				8CBDB2AD17F1D94D00029CAA /* MapTooltip.m */,
+				8CBDB2AE17F1D94D00029CAA /* MapCrosshair.h */,
+				8CBDB2AF17F1D94D00029CAA /* MapCrosshair.m */,
+				8CBDB28B17F1D92400029CAA /* Images.xcassets */,
+				8CBDB27A17F1D92400029CAA /* Supporting Files */,
+			);
+			path = MovementTracker;
+			sourceTree = "<group>";
+		};
+		8CBDB27A17F1D92400029CAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CBDB27B17F1D92400029CAA /* MovementTracker-Info.plist */,
+				8CBDB27C17F1D92400029CAA /* InfoPlist.strings */,
+				8CBDB27F17F1D92400029CAA /* main.m */,
+				8CBDB28117F1D92400029CAA /* MovementTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CBDB26F17F1D92400029CAA /* MovementTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBDB2A217F1D92400029CAA /* Build configuration list for PBXNativeTarget "MovementTracker" */;
+			buildPhases = (
+				8CBDB26C17F1D92400029CAA /* Sources */,
+				8CBDB26D17F1D92400029CAA /* Frameworks */,
+				8CBDB26E17F1D92400029CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovementTracker;
+			productName = MovementTracker;
+			productReference = 8CBDB27017F1D92400029CAA /* MovementTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CBDB26817F1D92400029CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alison Clarke";
+			};
+			buildConfigurationList = 8CBDB26B17F1D92400029CAA /* Build configuration list for PBXProject "MovementTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CBDB26717F1D92400029CAA;
+			productRefGroup = 8CBDB27117F1D92400029CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CBDB26F17F1D92400029CAA /* MovementTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CBDB26E17F1D92400029CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBDB28C17F1D92400029CAA /* Images.xcassets in Resources */,
+				8CBDB27E17F1D92400029CAA /* InfoPlist.strings in Resources */,
+				8CBDB28717F1D92400029CAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CBDB26C17F1D92400029CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBDB2B317F1D94D00029CAA /* MapCrosshair.m in Sources */,
+				8CBDB2B017F1D94D00029CAA /* MovementTrackerDataSource.m in Sources */,
+				8CBDB28A17F1D92400029CAA /* ViewController.m in Sources */,
+				8CBDB2B217F1D94D00029CAA /* MapTooltip.m in Sources */,
+				8CBDB28417F1D92400029CAA /* AppDelegate.m in Sources */,
+				8CBDB2B117F1D94D00029CAA /* MovementTrackerDatum.m in Sources */,
+				8CBDB28017F1D92400029CAA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CBDB27C17F1D92400029CAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBDB27D17F1D92400029CAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CBDB28517F1D92400029CAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBDB28617F1D92400029CAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CBDB2A017F1D92400029CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8CBDB2A117F1D92400029CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CBDB2A317F1D92400029CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
+				INFOPLIST_FILE = "MovementTracker/MovementTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CBDB2A417F1D92400029CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
+				INFOPLIST_FILE = "MovementTracker/MovementTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CBDB26B17F1D92400029CAA /* Build configuration list for PBXProject "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBDB2A017F1D92400029CAA /* Debug */,
+				8CBDB2A117F1D92400029CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBDB2A217F1D92400029CAA /* Build configuration list for PBXNativeTarget "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBDB2A317F1D92400029CAA /* Debug */,
+				8CBDB2A417F1D92400029CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CBDB26817F1D92400029CAA /* Project object */;
+}
