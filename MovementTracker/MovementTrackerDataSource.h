@@ -26,7 +26,8 @@
 
 @interface MovementTrackerDataSource : NSObject<SChartDatasource>
 
-- (void)addLocation:(CLLocation*)location lastLocation:(CLLocation*) lastLocation;
+- (void)addLocation:(CLLocation*)location;
 - (MovementTrackerDatum*) getMovementTrackerDatumAtIndex:(int) index;
+- (CLLocation*) getLastLocation;
 
 @end

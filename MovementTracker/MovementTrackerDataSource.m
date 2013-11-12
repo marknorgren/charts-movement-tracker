@@ -41,15 +41,15 @@
 }
 
 // Adds the location to our data
-- (void)addLocation:(CLLocation*)location lastLocation:(CLLocation*) lastLocation {
+- (void)addLocation:(CLLocation*)location {
     // Create a new MovementTrackerDatum object based on the given location
     MovementTrackerDatum *datum = [[MovementTrackerDatum alloc] init];
     datum.date = location.timestamp;
     datum.location = location;
-    if (lastLocation != NULL)
+    if ([_locationData count] > 0)
     {
         // Convert distance (in meters) into miles and add to total
-        _totalDistance += [location distanceFromLocation:lastLocation] * 0.000621371192;
+        _totalDistance += [location distanceFromLocation:[self getLastLocation]] * 0.000621371192;
     }
     datum.totalDistance = _totalDistance;
     // Convert speed (in m/s) into mph
@@ -66,6 +66,11 @@
     } else {
         return NULL;
     }
+}
+
+// Get the last location visited
+- (CLLocation*) getLastLocation {
+    return ((MovementTrackerDatum*)[_locationData lastObject]).location;
 }
 
 #pragma mark - SChartDatasource implementation methods
