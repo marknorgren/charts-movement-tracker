@@ -97,13 +97,13 @@
 
 #pragma mark - MKMapViewDelegate methods
 
-- (MKOverlayView*)mapView:(MKMapView*)theMapView viewForOverlay:(id <MKOverlay>)overlay
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
-    MKPolylineView* lineView = [[MKPolylineView alloc] initWithPolyline:_polyline];
-    lineView.fillColor = [UIColor redColor];
-    lineView.strokeColor = [UIColor redColor];
-    lineView.lineWidth = 3;
-    return lineView;
+    MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithPolyline:overlay];
+    renderer.fillColor = [UIColor redColor];
+    renderer.strokeColor = [UIColor redColor];
+    renderer.lineWidth = 3;
+    return renderer;
 }
 
 #pragma mark - SChartTooltip overrides
@@ -132,14 +132,16 @@
         }
         [_annotation setCoordinate:location.coordinate];
         
-        
         NSString *unit;
+        SChartAxis *yAxis;
         if ([series.title isEqualToString:@"Distance"]) {
-            unit = @"miles";            
+            unit = @"miles";
+            yAxis = chart.secondaryYAxes[0];
         } else {
             unit = @"mph";
+            yAxis = chart.yAxis;
         }
-        [_annotation setTitle:[NSString stringWithFormat:@"%@: %@ %@", [series title], [chart.yAxis stringForId: [dataPoint sChartYValue]], unit]];
+        [_annotation setTitle:[NSString stringWithFormat:@"%@: %@ %@", [series title], [yAxis stringForId: [dataPoint sChartYValue]], unit]];
         [_annotation setSubtitle:[NSString stringWithFormat:@"Time: %@", [chart.xAxis stringForId: [dataPoint sChartXValue]]]];
         [_mapView addAnnotation:_annotation];
         [_mapView selectAnnotation:_annotation animated:NO];

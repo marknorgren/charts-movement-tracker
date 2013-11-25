@@ -30,13 +30,11 @@
 @interface ViewController () {
     CLLocationManager *_locationManager;
     MovementTrackerDataSource *_datasource;
-    CLLocation* _lastLocation;
-    double _totalDistance;
     ShinobiChart* _chart;
     MapTooltip* _mapTooltip;
     MapCrosshair* _mapCrosshair;
     __weak IBOutlet UIView *_placeholderView;
-    BOOL chartSetup;
+    BOOL _chartSetup;
 }
 
 @end
@@ -111,7 +109,7 @@
 
     [_placeholderView addSubview: _chart];
     
-    chartSetup = YES;
+    _chartSetup = YES;
 }
 
 #pragma mark - CLLocationManagerDelegate implementation methods
@@ -119,10 +117,12 @@
 // Delegate method from the CLLocationManagerDelegate protocol
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation* location = [locations lastObject];
-    // Add the location to our datasource
-    [_datasource addLocation:location lastLocation:_lastLocation];
+    CLLocation* lastLocation = [_datasource getLastLocation];
     
-    if (!chartSetup) {
+    // Add the location to our datasource
+    [_datasource addLocation:location];
+    
+    if (!_chartSetup) {
         // Set up the chart now we've got a data point
         [self setupChart];
     } else {
@@ -136,12 +136,9 @@
         
         // Pass the new locations, plus the last location, to our custom tooltip, so it can plot the path on its map
         NSMutableArray *allLocations = [NSMutableArray arrayWithArray:locations];
-        [allLocations insertObject:_lastLocation atIndex:0];
+        [allLocations insertObject:lastLocation atIndex:0];
         [_mapTooltip addLocations:allLocations];
     }
-    
-    // Update the last location
-    _lastLocation = location;
 }
 
 #pragma mark - SChartDelegate methods
