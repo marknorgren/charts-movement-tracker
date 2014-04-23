@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681ABC621907C0250058E6A4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 681ABC611907C0250058E6A4 /* libc++.dylib */; };
 		8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */; };
 		8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */; };
 		8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632317F1DAC200C4D1EF /* OpenGLES.framework */; };
 		8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632517F1DAC700C4D1EF /* CoreText.framework */; };
-		8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632717F1DACF00C4D1EF /* libstdc++.dylib */; };
 		8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */; };
 		8CBDB27417F1D92400029CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27317F1D92400029CAA /* Foundation.framework */; };
 		8CBDB27617F1D92400029CAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBDB27517F1D92400029CAA /* CoreGraphics.framework */; };
@@ -30,11 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		681ABC611907C0250058E6A4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8C96632317F1DAC200C4D1EF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8C96632517F1DAC700C4D1EF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		8C96632717F1DACF00C4D1EF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
 		8CBDB27017F1D92400029CAA /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBDB27317F1D92400029CAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681ABC621907C0250058E6A4 /* libc++.dylib in Frameworks */,
 				8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */,
-				8C96632817F1DACF00C4D1EF /* libstdc++.dylib in Frameworks */,
 				8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */,
 				8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */,
 				8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */,
@@ -102,8 +102,8 @@
 		8CBDB27217F1D92400029CAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				681ABC611907C0250058E6A4 /* libc++.dylib */,
 				8C96632917F1DAD500C4D1EF /* ShinobiCharts.framework */,
-				8C96632717F1DACF00C4D1EF /* libstdc++.dylib */,
 				8C96632517F1DAC700C4D1EF /* CoreText.framework */,
 				8C96632317F1DAC200C4D1EF /* OpenGLES.framework */,
 				8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */,
@@ -330,6 +330,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
 				INFOPLIST_FILE = "MovementTracker/MovementTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,6 +348,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
 				INFOPLIST_FILE = "MovementTracker/MovementTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
