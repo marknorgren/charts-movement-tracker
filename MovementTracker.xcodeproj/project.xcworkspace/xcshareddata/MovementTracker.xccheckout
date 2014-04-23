@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E45E06E4-9422-4477-96F9-7FE4C1C33A4B</string>
+	<string>FF289C86-40DE-4A1F-BEF3-824A64D71AA0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MovementTracker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C7A2A702-6CAF-45AB-B2E7-E8E1A6394699</key>
-		<string>https://github.com/alisonrclarke/charts-movement-tracker.git</string>
+		<key>941B5652-394E-4FC4-97B1-B805241624EF</key>
+		<string>https://github.com/ShinobiControls/charts-movement-tracker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MovementTracker.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C7A2A702-6CAF-45AB-B2E7-E8E1A6394699</key>
+		<key>941B5652-394E-4FC4-97B1-B805241624EF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/alisonrclarke/charts-movement-tracker.git</string>
+	<string>https://github.com/ShinobiControls/charts-movement-tracker.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C7A2A702-6CAF-45AB-B2E7-E8E1A6394699</string>
+	<string>941B5652-394E-4FC4-97B1-B805241624EF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C7A2A702-6CAF-45AB-B2E7-E8E1A6394699</string>
+			<string>941B5652-394E-4FC4-97B1-B805241624EF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>charts-movement-tracker</string>
 		</dict>
