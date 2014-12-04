@@ -50,6 +50,9 @@
         _locationManager.delegate = self;
         _locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
         _locationManager.distanceFilter = 5;
+        if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+          [_locationManager requestWhenInUseAuthorization];
+        }
         [_locationManager startUpdatingLocation];
         
         // Create a data source
