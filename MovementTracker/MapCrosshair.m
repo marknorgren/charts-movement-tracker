@@ -90,8 +90,8 @@
         }
         
         // Calculate the new pixel positions
-        double xCoord = self.chart.canvas.glView.frame.origin.x + [self.chart.xAxis pixelValueForDataValue: @(_lastDataPoint.x)];
-        double yCoord = self.chart.canvas.glView.frame.origin.y + [yAxis pixelValueForDataValue: @(_lastDataPoint.y)];
+        double xCoord = self.chart.canvas.frame.origin.x + [self.chart.xAxis pixelValueForDataValue: @(_lastDataPoint.x)];
+        double yCoord = self.chart.canvas.frame.origin.y + [yAxis pixelValueForDataValue: @(_lastDataPoint.y)];
         
         SChartPoint const mappedPosition = {
             xCoord, yCoord

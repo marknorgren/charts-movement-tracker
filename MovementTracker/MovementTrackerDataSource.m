@@ -21,7 +21,6 @@
 
 #import "MovementTrackerDataSource.h"
 #import "MovementTrackerDatum.h"
-#import <ShinobiCharts/SChartInternalDataPoint.h>
 
 @interface MovementTrackerDataSource () {
     double _totalDistance;
