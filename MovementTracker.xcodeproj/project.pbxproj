@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DC3686C1E982ABB00DB5817 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC368671E982ABB00DB5817 /* ShinobiCharts.framework */; };
+		4DC3686D1E982ABB00DB5817 /* ShinobiControls Licence.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4DC368681E982ABB00DB5817 /* ShinobiControls Licence.pdf */; };
+		4DC3686E1E982ABB00DB5817 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DC368691E982ABB00DB5817 /* CHANGELOG.txt */; };
+		4DC3686F1E982ABB00DB5817 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DC3686A1E982ABB00DB5817 /* README.txt */; };
+		4DC368701E982ABB00DB5817 /* VERSION.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DC3686B1E982ABB00DB5817 /* VERSION.txt */; };
 		681ABC621907C0250058E6A4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 681ABC611907C0250058E6A4 /* libc++.dylib */; };
 		8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */; };
 		8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */; };
@@ -30,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DC368671E982ABB00DB5817 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		4DC368681E982ABB00DB5817 /* ShinobiControls Licence.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ShinobiControls Licence.pdf"; sourceTree = "<group>"; };
+		4DC368691E982ABB00DB5817 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		4DC3686A1E982ABB00DB5817 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4DC3686B1E982ABB00DB5817 /* VERSION.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION.txt; sourceTree = "<group>"; };
 		681ABC611907C0250058E6A4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		8C96631D17F1D9F400C4D1EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8C96631F17F1D9FC00C4D1EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -70,6 +80,7 @@
 				8C96632A17F1DAD500C4D1EF /* ShinobiCharts.framework in Frameworks */,
 				8C96632617F1DAC700C4D1EF /* CoreText.framework in Frameworks */,
 				8C96632417F1DAC200C4D1EF /* OpenGLES.framework in Frameworks */,
+				4DC3686C1E982ABB00DB5817 /* ShinobiCharts.framework in Frameworks */,
 				8C96632017F1D9FC00C4D1EF /* QuartzCore.framework in Frameworks */,
 				8C96631E17F1D9F400C4D1EF /* CoreLocation.framework in Frameworks */,
 				8CBDB2B517F1D9A400029CAA /* MapKit.framework in Frameworks */,
@@ -82,6 +93,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC368661E982AB100DB5817 /* Shinobi */ = {
+			isa = PBXGroup;
+			children = (
+				4DC368671E982ABB00DB5817 /* ShinobiCharts.framework */,
+				4DC368681E982ABB00DB5817 /* ShinobiControls Licence.pdf */,
+				4DC368691E982ABB00DB5817 /* CHANGELOG.txt */,
+				4DC3686A1E982ABB00DB5817 /* README.txt */,
+				4DC3686B1E982ABB00DB5817 /* VERSION.txt */,
+			);
+			path = Shinobi;
+			sourceTree = "<group>";
+		};
 		8CBDB26717F1D92400029CAA = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +142,7 @@
 		8CBDB27917F1D92400029CAA /* MovementTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4DC368661E982AB100DB5817 /* Shinobi */,
 				8CBDB28217F1D92400029CAA /* AppDelegate.h */,
 				8CBDB28317F1D92400029CAA /* AppDelegate.m */,
 				8CBDB28517F1D92400029CAA /* Main.storyboard */,
@@ -201,8 +225,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC3686E1E982ABB00DB5817 /* CHANGELOG.txt in Resources */,
 				8CBDB28C17F1D92400029CAA /* Images.xcassets in Resources */,
 				8CBDB27E17F1D92400029CAA /* InfoPlist.strings in Resources */,
+				4DC3686D1E982ABB00DB5817 /* ShinobiControls Licence.pdf in Resources */,
+				4DC3686F1E982ABB00DB5817 /* README.txt in Resources */,
+				4DC368701E982ABB00DB5817 /* VERSION.txt in Resources */,
 				8CBDB28717F1D92400029CAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +354,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/MovementTracker/Shinobi",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
@@ -344,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/MovementTracker/Shinobi",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MovementTracker/MovementTracker-Prefix.pch";
