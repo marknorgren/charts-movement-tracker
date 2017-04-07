@@ -20,12 +20,13 @@
 //
 
 #import "AppDelegate.h"
+#import <ShinobiCharts/ShinobiChart.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSLog(@"ShinobiCharts version: %@", ShinobiCharts.getInfo);
     return YES;
 }
 
