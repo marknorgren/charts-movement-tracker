@@ -42,6 +42,16 @@
     [super showCrosshair];
 }
 
+-(void)showAtPoint:(CGPoint)pointInChart inChart:(ShinobiChart *)chart {
+    NSLog(@"\n***** showAtPoint %f, %f", pointInChart.x, pointInChart.y);
+    [super showAtPoint:pointInChart inChart:chart];
+}
+
+-(void)moveToPoint:(CGPoint)pointInChart inChart:(ShinobiChart *)chart {
+    NSLog(@"\n***** moveToPoint %f, %f", pointInChart.x, pointInChart.y);
+    [super moveToPoint:pointInChart inChart:chart];
+}
+
 -(BOOL)removeCrosshair
 {
     // Keep track of current status before passing to parent
